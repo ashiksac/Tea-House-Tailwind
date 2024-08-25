@@ -1,42 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tea House</title>
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea House</title>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/093539ec2a.js" crossorigin="anonymous"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/093539ec2a.js" crossorigin="anonymous"></script>
 
-    <!-- tailwind cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
-      
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          },
+            fontFamily: {
+            'manrope': ["Manrope", 'sans-serif']
+          },
+        },
+      },
+    }
+  </script>
+
 
 </head>
-<body>
-    <header>
 
+<body class="font-manrope">
+  <!-- main content -->
+  <main class="max-w-screen-xl mx-auto px-16 lg:px-28">
+    <!-- header section -->
+    <header class=" md:flex pt-10 mb-20 gap-10">
+      <div class="w-full md:w-full lg:w-2/4">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold">It's good <br> tea time at The Tea House</h1>
+        <br>
+        <p class="text-gray-500 w-3/4" text-lg>Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.</p>
+        <br>
+        <a href=""> <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-6 py-4 rounded-xl font-bold text-white">Explore More
+            <i class="fa-solid fa-arrow-right -rotate-45"></i></button></a>
+      </div>
+      <!-- image content -->
+      <div class="relative">
+        <!-- image -->
+        <div>
+          <img class="w-full" src="images/banner.png" alt="">
+        </div>
+        <!-- card -->
+        <div
+          class="absolute flex items-center gap-x-0.5 bg-white shadow-lg px-2 py-2 md:px-6 lg:py-2 rounded-lg top-28 md:top-64 md:left-30 lg:top-60 lg:left-12">
+          <div>
+            <!-- font -->
+            <div><i class="fa-solid fa-star text-amber-500"></i></div>
+          </div>
+          <!-- text -->
+          <div>
+            <h2 class="lg:text-2xl text-xl font-bold">5.00</h2>
+            <p class="text-sm text-gray-500 ">Trust Pilot Ratings</p>
+          </div>
+        </div>
+      </div>
     </header>
-    <main>
 
-    </main>
-    <footer>
+    <!-- featured product section -->
+    <section class="py-8 lg:py-24">
+      <!-- title -->
+      <div class="text-center mb-8">
+        <h1 class="text-3xl md:text-4xl font-bold mb-5">Our Featured Products</h1>
+        <p class="text-gray-600 max-w-xl mx-auto">There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered alteration in some form, by injected humour, or randomized words which don't look
+          even slightly believable. </p>
 
-    </footer>
+      </div>
+      <!-- grid cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <!-- product card -->
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4 " src="images/tea-1.png" alt="">
+          <div class="p-4">
+            <h1 class="font-bold ">Milk Tea</h1>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4 " src="images/tea-2.png" alt="">
+          <div class="p-4">
+            <h1 class="font-bold ">Black Tea</h1>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4 " src="images/tea-3.png" alt="">
+          <div class="p-4">
+            <h1 class="font-bold ">Lemon Tea</h1>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+        <div class="rounded-lg shadow-md bg-gray-50 overflow-hidden">
+          <img class="mx-auto pt-4 " src="images/tea-4.png" alt="">
+          <div class="p-4">
+            <h1 class="font-bold ">Green Tea</h1>
+            <p class="text-gray-600">Creamer could be replaced by fresh milk</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- great tea sec -->
+    <section class="mb-24">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+        <!-- image sec -->
+        <div class="grid grid-cols-2 grid-rows-3 gap-4 lg:w-5/6 ">
+          <div class="bg-gradient-to-r from-red-100 to-red-50 rounded-xl"></div>
+          <div class="bg-orange-50 rounded-lg row-span-2 ">
+            <img class="mx-auto my-10" src="images/fresh-1.png" alt="">
+          </div>
+          <div class="bg-stone-100 rounded-lg row-span-2">
+            <img class="mx-auto my-10" src="images/fresh-2.png" alt="">
+          </div>
+          <div class="bg-gradient-to-r from-stone-200 to-stone-50 rounded-xl"></div>
+        </div>
+        <!-- text -->
+        <div>
+          <h1 class="text-4xl font-bold mb-4">Great Tea, Freshly Presented</h1>
+          <p class="text-gray-500">The meaning of gong cha is chinese is to provide the best tea to emperor from all
+            possessions . It represents the highest quality and self expectation. Establishing in 2006, Gong cha had
+            been deeply appreciated by its customers because of good words of mouth and unique customized service
+            originated from Taiwan.</p>
+          <br>
+          <h4 class="text-2xl font-bold mb-2">Unique Taste</h1>
+            <p class="text-gray-500">A Unique and different style from other teapots gives a luxurious and minimalist
+              impression</p>
+            <br>
+            <h4 class="text-2xl font-bold mb-2">Premium Quality</h4>
+            <p class="text-gray-500">Premium Quality that makes tea more elegant and more durable when you use it.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- reviews -->
+    <section class="mb-24">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg text-white px-7 md:px-10 ">
+        <!-- text -->
+        <div class="flex justify-center items-center mr-5">
+          <div class="w-">
+            <h1 class="text-4xl font-bold mt-10">Meet Our Super Clients</h1>
+            <br>
+            <p class="text-sm">There are many variations of passages of Lorem Ipsum available, but the majority have
+              suffered alteration in some form, by injected humour, or randomized words which don't look even slightly
+              believable. </p>
+            <br>
+            <button class="px-3 py-2 bg-white text-orange-600 font-bold rounded-lg mb-5">Show All</button>
+          </div>
+        </div>
+        <!-- review card sec -->
+        <div class="relative py-24">
+          <!--middle card  -->
+
+          <div class="absolute z-10 top-44 ">
+            <div
+              class=" left-8  h-40 w-full md:w-5/6   rounded-lg bg-white text-black flex items-center px-10  text-sm ">
+              <div class="absolute -top-5 -left-5 bg-white rounded-full p-1 overflow-hidden ">
+                <img src="images/client.png" alt="">
+              </div>
+              <div>
+                <p class="text-gray-500 mb-3 mt-4">We are providing the best and suitable home insurance services for
+                  the people who are interested to treatment</p>
+                <h4 class="font-bold "> Lee</h4>
+                <p class="text-gray-500 mb-3">Businessman</p>
+
+              </div>
+
+            </div>
+          </div>
+          <!-- top cards -->
+          <div
+            class="relative left-8  h-40 w-full md:w-5/6 rounded-lg bg-white text-black flex items-center px-10 opacity-40 text-sm ">
+            <div class="absolute -top-5 -left-5 bg-white rounded-full p-1 overflow-hidden ">
+              <img src="images/client.png" alt="">
+            </div>
+            <div>
+              <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the
+                people who are interested to treatment</p>
+              <h4 class="font-bold ">Lee</h4>
+              <p class="text-gray-500">Businessman</p>
+
+            </div>
+
+          </div>
+          <!-- bottom card -->
+          <div
+            class="relative left-8  top-10 h-40 w-full md:w-5/6 rounded-lg bg-white text-black flex items-center px-10 opacity-40 text-sm ">
+            <div class="absolute -top-5 -left-5 bg-white rounded-full p-1">
+              <img src="images/client.png" alt="">
+            </div>
+            <div>
+              <p class="text-gray-500 mb-5">We are providing the best and suitable home insurance services for the
+                people who are interested to treatment</p>
+              <h4 class="font-bold ">Lee</h4>
+              <p class="text-gray-500">Businessman</p>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
 </body>
+
 </html>
